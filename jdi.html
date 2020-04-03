@@ -11,10 +11,12 @@
   <title>DEEBOL</title>
   <link rel="shortcut icon" href="images/favicon.png">
 
-  <!-- Custom fonts & styles-->  
+   <!-- Custom fonts & styles-->  
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet"> 
   <link href="css/fontawesome.all.min.css" rel="stylesheet" type="text/css">
   <link href="css/sb-admin-2.min.css" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" type="text/css" href="css/jquery.dataTables.min.css">	
 
 </head>
 
@@ -125,34 +127,23 @@
 
         <!-- Topbar -->
 		<nav class="navbar navbar-expand navbar-light  topbar mb-4 static-top shadow">
-		<h4 class="m-0 font-weight-bold text-primary">Welcome!</h4>
+		<h4 class="m-0 font-weight-bold text-primary">JDI Standard MIP LCD</h4>
 		</nav>
         <!-- End of Topbar -->
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
-		
-          <!-- Content Row -->
-          <div class="row">
-
-            <!-- Content Column -->
-			<div class="col-lg-6 mb-4">
-
-              <!-- News -->
-              <div class="card shadow mb-4">
-                <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">New Item Release</h6>
-                </div>
-                <div class="card-body">
-                  <div class="text-center">
-                    <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 25rem;" src="images/news/undraw_hologram_fjwp.svg" alt="">
-                  </div>
-                  <p>New model IT7259EX-17 touch IC was released. The IT7259EX-17 is a new one of 7259E capacitance sensor series,  it integrates one single electrode 17-channel capacitance-to-digital converter (CDC), one high performance low-power-consumption 8-bit MCU, flexible memory support, and many powerful hardware functions. The internal CDC has one automatic calibrate and compensates engine to remove effect from environmental change.</p>
-				  <p>The IT7259EX-17 is available in 28-pin XQFN packages. Compared with the existing products, IT7259EX-17 has smaller dimension (3*3 mm) and supports more channels (17 channels) to fufill the recent application demands of larger wearable device screens. It also has low power consumption with active mode within 0.5~1.5mA, and supports of I2C interface.</p>
-                  <a target="_blank" rel="nofollow" href="ite.html">Check for more IT7259E series &rarr;</a>
-                </div>
-              </div>              
-
+          <!-- Page Heading -->
+		  
+          <!-- DataTales Example -->
+          <div class="card shadow mb-4">
+            <div class="card-header py-3">
+              <h6 class="m-0 font-weight-bold text-primary">Small Size Display List</h6>
+            </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table id="jdidata" class="display dataTable no-footer" width="100%" role="grid" aria-describedby="example_info" style="width: 100%;"></table>
+              </div>
             </div>
           </div>
 
@@ -162,7 +153,7 @@
       </div>
       <!-- End of Main Content -->
 
-      <!-- Footer -->
+     <!-- Footer -->
       <footer class="sticky-footer bg-white">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
@@ -184,6 +175,9 @@
 
   <!-- Custom scripts for all pages-->
         <script src="js/sb-admin-2.min.js"></script>
+
+		<script type="text/javascript" language="javascript" src="js/jquery.dataTables.min.js"></script>
+	    <script type="text/javascript" language="javascript" src="data/jdi.js"></script>
 
 </body>
 
